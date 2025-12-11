@@ -8,8 +8,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.1
 
-      - name: build using mave
+      - name: build using maven
         run: mvn -B package
           
-      - name: build using mave
+      - name: list
         run: ls -lh target/
+      - name: tesing
+        run: mvn test
